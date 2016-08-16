@@ -1,6 +1,7 @@
 <?php
 
 include 'functions.php';
+include '../day2/service/userservice.php';
 
 if(!isset($_SESSION['user'])){
 
@@ -11,6 +12,21 @@ if(!isset($_SESSION['user'])){
 
 
 if($_POST){
+
+    $info = array(
+        'login' => $_POST['login'],
+        'password' => $_POST['password'],
+    );
+
+    if(isset($_POST['password_rep'])){
+        registration($info);
+    }
+
+    else{
+        authorization($info);
+    }
+
+    header('Location: /');
 
 }
 else{
@@ -28,6 +44,17 @@ else{
                 getView('authorization');
 
         }
+    }
+
+    elseif ($_GET['login']){
+
+        $user = getByName($_GET['login'])['login'];
+
+        if(isset($user))
+        {
+            echo '0';
+        }
+
     }
 
     else{
