@@ -9,12 +9,9 @@ var Reg = new RegExp("^[a-zA-Z0-9]+$");
 
 
 
-
-
 function registration(){
     valid = true;
 
-    cleanInfo();
     checkLogin();
     checkPassword();
 
@@ -47,7 +44,6 @@ function checkLogin(){
 
                 if(data == '0'){
                     notValidField($('#login_info'), notUniqueLogin);
-                    console.log(valid);
                 }},
             async: false
         });

@@ -13,6 +13,7 @@ if($_SESSION['user'] == 'Anon'){ ?>
     <input type="password" id='pass' name="password" placeholder="Введите пароль"/>
     <br/> <label id="password_info"></label>
     <br/>
+    <label id="memorybox">Запомнить<input type="checkbox" name="remember" /></label>
 
     <input type="button" onclick="authorization()" value="Авторизоваться"/>
 
@@ -21,10 +22,4 @@ if($_SESSION['user'] == 'Anon'){ ?>
 
 <?php }?>
 
-<?php
 
-if($_SESSION['message'] == 'error'){ ?>
-
-<h1> Были введены неправельные данные! </h1>
-
-<?php }?>

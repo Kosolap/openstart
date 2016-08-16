@@ -9,11 +9,17 @@ include_once '../day2/service/db.php';
 
     if($_SESSION['user'] == '')
     {
-        $_SESSION['user'] = 'Anon';
+        if($_COOKIE['userdata']){
+
+            $userdata = json_decode($_COOKIE['userdata']);
+
+            authorization($userdata);
+        }
+        else{
+            $_SESSION['user'] = 'Anon';
+        }
 
     }
-
-    $_SESSION['message'] = 'norm';
 
 
 
@@ -30,8 +36,9 @@ if($_POST){
     }
 
     else{
-        if(!authorization($info))
-        $_SESSION['message'] = 'error';
+        $info['remember'] = $_POST['remember'];
+
+        authorization($info);
 
         getView('authorization');
     }
@@ -64,11 +71,29 @@ else{
 
     elseif ($_GET['login']){
 
-        $user = getByName($_GET['login'])['login'];
 
-        if(isset($user))
-        {
-            echo '0';
+        if($_GET['password']){
+
+
+            $info = array(
+                'login' => htmlspecialchars($_GET['login']),
+                'password' => $_GET['password'],
+            );
+
+            $zed = authorization($info);
+
+            if(!authorization($info)) echo '0';
+
+
+        }
+        else{
+
+            $user = getByName($_GET['login'])['login'];
+
+            if(isset($user))
+            {
+                echo '0';
+            }
         }
 
     }

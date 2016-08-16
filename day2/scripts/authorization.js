@@ -1,5 +1,6 @@
 var shortLogin = 'Cлишком короткий логин!',
-    shortPass = 'Слишком короткий пароль';
+    shortPass = 'Слишком короткий пароль',
+    wrongData = 'Неправильные логин или пароль!';
 
 
 
@@ -9,10 +10,9 @@ var shortLogin = 'Cлишком короткий логин!',
 function authorization(){
     valid = true;
 
-    cleanInfo();
     checkLogin();
     checkPassword();
-
+    checkUser();
 
     if(valid == true){
         $('#authorization_form').submit();
@@ -27,7 +27,7 @@ function checkLogin(){
 }
 
 function checkPassword(){
-    if($('#pass').val().length < 3) notValidField($('#pass_info'), shortPass);
+    if($('#pass').val().length < 3) notValidField($('#password_info'), shortPass);
 
 }
 
@@ -39,4 +39,23 @@ function notValidField(field, str) {
 
 function cleanInfo(){
     $("label[id*='info']").text('');
+}
+
+function checkUser() {
+
+    login = $('#login');
+    pass = $('#pass');
+
+    $.ajax({
+        url: '../day2/',
+        data: {'login':login.val(), 'password':pass.val()},
+        success: function(data){
+
+
+            if(data == '0'){
+                notValidField($('#password_info'), wrongData);
+            }},
+        async: false
+    });
+
 }

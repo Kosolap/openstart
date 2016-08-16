@@ -22,3 +22,13 @@ td{
     width: 30%;
     height: 30%;
 }
+
+noscript{
+    color: red;
+    font-weight: bold;
+}
+
+#memorybox{
+    color:darkgrey;
+    font-size: smaller;
+}

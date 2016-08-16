@@ -23,7 +23,14 @@ function authorization($info){
     if($author['login'] === $info['login']){
         $password = md5(md5($info['password']).$author['salt']);
         if($password == $author['password']){
+
             $_SESSION['user'] = htmlspecialchars_decode($author['login']);
+            if($info['remember']=='on'){
+                setcookie('userdata',json_encode(array(
+                    'login' => $info['login'],
+                    'password' => $info['password']
+                )), time()+10000);
+            }
 
             return true;
         }
