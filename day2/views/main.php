@@ -9,17 +9,17 @@
 
     </head>
     <body>
-
-
                 <table>
                     <tr>
                         <td></td>
                         <td>
-                            <h1>Здравствуй
+                            <h1>
+                                Здравствуй
                                 <?php if($_SESSION['user'] == 'Anon'){?>
                                     Аноним
                                 <?php }
                                 else{ echo $_SESSION['user']; }?>
+
                             </h1>
                         </td>
                         <td>
@@ -27,7 +27,6 @@
                                 <a href="../day2">Главная</a>
                             <?php }
                             else{
-
                                 if($_SESSION['user'] != 'Anon'){?>
                                     <a href="../day2?action=logout">Разлогиниться</a>
                                     <?php }else{ ?>
@@ -52,7 +51,7 @@
 
                     <tr>
                         <td></td>
-                        <td></td>
+                        <td><a href="../day2?action=test">Проверка</a></td>
                         <td></td>
                     </tr>
 

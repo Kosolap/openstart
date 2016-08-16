@@ -7,10 +7,18 @@ $opt = array(
 );
 
 //Подключаемся к базе данных
-$database = new PDO('mysql:host=localhost:3306;dbname=day2','root','12345',$opt);
+$server = "mysql:host=127.0.0.1;dbname=day2";
+
+$user = 'root';
+
+$password = '123';
+
+$dbh = new PDO($server, $user, $password, $opt);
+
+
 
 //Функция вызываемая сервисов, чтоб не надо было каждый раз создавать новое подключение
 function getDB(){
-    global $database;
-    return $database;
+    global $dbh;
+    return $dbh;
 }

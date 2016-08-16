@@ -1,7 +1,5 @@
 <?php
 
-include 'db.php';
-
 function registration($info){
 
     $db = getDB();
@@ -17,16 +15,15 @@ function registration($info){
         'password'=>$password,
         'salt'=>$salt));
 
-    $_SESSION['username'] = $info['login'];
 }
 
 function authorization($info){
 
     $author = getByName($info['login']);
-    if($author->get('name') === $info['login']){
-        $password = md5(md5($info['password']).$author->get('salt'));
-        if($password == $author->get('password')){
-            $_SESSION['username'] = $author->get('name');
+    if($author['login'] === $info['login']){
+        $password = md5(md5($info['password']).$author['salt']);
+        if($password == $author['password']){
+            $_SESSION['user'] = htmlspecialchars_decode($author['login']);
 
             return true;
         }
@@ -45,5 +42,7 @@ function getByName($name){
 
     $author = $row->fetchAll();
 
-    return new Author($author[0]);
+    $author = $author[0];
+
+    return $author;
 }

@@ -1,8 +1,11 @@
-var emptyField = 'Заполните поле!',
-    shortLogin = 'Cлишком короткий логин!',
+var shortLogin = 'Cлишком короткий логин!',
     shortPass = 'Слишком короткий пароль',
     notEqualPass = 'Пароли не совпадают!',
     notUniqueLogin = 'Пользователь с таким именем уже зарегестрирован!';
+    wrongChars = 'Допустимы только буквы и цифры';
+
+
+var Reg = new RegExp("^[a-zA-Z0-9]+$");
 
 
 
@@ -13,7 +16,7 @@ function registration(){
 
     cleanInfo();
     checkLogin();
-    checkPassword()
+    checkPassword();
 
 
     if(valid == true){
@@ -23,6 +26,14 @@ function registration(){
 
 function checkLogin(){
     login = $('#login');
+
+
+    if(!Reg.test(login.val())){
+
+        notValidField($('#login_info'), wrongChars);
+    }
+
+
 
     if(login.val().length < 5) {
 
@@ -44,8 +55,15 @@ function checkLogin(){
 }
 
 function checkPassword(){
-    if($('#pass').val().length < 3) notValidField($('#passinfo'), shortPass);
-    else if($('#pass').val() != $('#re_pass').val()) notValidField($('#passconfirminfo'), notEqualPass);
+
+    if(!Reg.test($('#pass').val())){
+
+        notValidField($('#pass_info'), wrongChars);
+    }
+
+
+    if($('#pass').val().length < 3) notValidField($('#pass_info'), shortPass);
+    else if($('#pass').val() != $('#pass_rep').val()) notValidField($('#password_rep_info'), notEqualPass);
 
 }
 
