@@ -6,10 +6,18 @@ $(document).ready(function(){
     //Скрыть PopUp при загрузке страницы
     PopUpHide();
 
+    $( "#popup" ).dialog({
+        autoOpen: false
+    });
+
 });
 //Функция отображения PopUp
 function PopUpShow(){
-    $("#popup1").show();
+    $("#popup").show();
+
+    $( function() {
+        $( "#popup" ).dialog('open');
+    } );
 }
 //Функция скрытия PopUp
 function PopUpHide(){
@@ -21,7 +29,7 @@ function PopUpHide(){
     $('#contacts_info').text('');
     $('#comment_info').text('');
 
-    $("#popup1").hide();
+    $("#popup").hide();
 }
 
 function sendComment(){
@@ -61,6 +69,9 @@ function sendComment(){
 
 
         if(result) {
+
+            $('#popup').dialog('close');
+
             $.fancybox('<div class="resultBox success"><div class="restext">Письмо отправленно</div></div>');
         }
         else $.fancybox('<div class="resultBox fail"><div class="restext">Письмо не отправленно</div></div>');
@@ -109,7 +120,7 @@ function valid(name, contacts, comment) {
     if(contacts == ''){
         $('#contacts_info').text('Поле Е-mail должно быть заполнено!');
         check = false;
-    }else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(contacts))
+    }else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w+)+$/.test(contacts))
     {
 
 

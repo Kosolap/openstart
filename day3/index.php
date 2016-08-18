@@ -36,8 +36,6 @@ if($_POST){
         array_push($messages,'Сообщение содержит недопустимые данные');
     }
 
-    echo $status;
-
     if($status){
         $message =  'Письмо от пользователя: '.$name.'\n'.
             'Контакты пользователя: '.$contacts.'\n'.

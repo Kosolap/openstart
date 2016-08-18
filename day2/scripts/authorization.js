@@ -4,7 +4,25 @@ var shortLogin = 'Cлишком короткий логин!',
 
 
 
+$(document).ready(function(){
 
+    document.onkeyup = function (e) {
+
+        e = e || window.event;
+
+        if (e.keyCode === 13) {
+
+            authorization();
+
+        }
+        // Отменяем действие браузера
+
+        return false;
+
+    }
+
+
+});
 
 
 function authorization(){

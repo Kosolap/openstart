@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <title><?php echo $title;?></title>
         <link href="../day2/css/main.css" rel="stylesheet"/>
-        <script src="../day2/scripts/<?php echo $title;?>.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
     </head>
@@ -65,5 +64,5 @@
 
     </body>
 </html>
-
+<script src="../day2/scripts/<?php echo $title;?>.js"></script>
 

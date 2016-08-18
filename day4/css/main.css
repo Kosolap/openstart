@@ -1,0 +1,105 @@
+#payment{
+
+    width: 480px;
+    border-spacing: 2px;
+    box-sizing: border-box;
+
+}
+
+td{
+    margin: 0px;
+    padding: 0px;
+    border: white 4px solid;
+
+    border-radius: 20px;
+
+    width: 160px;
+    height: 35px;
+}
+
+td:hover{
+
+    border: green 4px solid;
+
+}
+
+
+.form-text{
+
+    width: 50px;
+
+    font-weight: 700;
+
+    padding: .4em 1em calc(.4em + 3px);
+
+    border-radius: 3px;
+
+    border: 3px rgb(64,199,129) solid;;
+
+    color: darkgreen;
+
+}
+
+label{
+    font-weight: 700;
+    color: darkgreen;
+}
+
+.button{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+}
+.button:hover { background: rgb(53, 167, 110); }
+.button:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.success{
+    color: darkgreen;
+
+    border-bottom: 2px darkgreen solid;
+
+    float: left;
+}
+
+.error{
+    color:red;
+    border-bottom: 2px red solid;
+}
+
+#title{
+    font-size: larger;
+}
+
+
+body{
+    font-family: Areal;
+    padding: 0;
+    margin: 0;
+}
+.b-container{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.b-popup{
+    width:100%;
+    min-height:100%;
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:500px;
+    padding:10px;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+    text-align: center;
+}

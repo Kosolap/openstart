@@ -19,7 +19,7 @@ if(checkNumber($param)) analizNumber($param);
 <form method="post">
 
 
-        <input name="number" placeholder="Введите номер"/>
+        <input name="number" placeholder="Введите номер" value="<?php echo  $_POST['number'];?>"/>
 
 
         <input type="submit" value="Отправить">

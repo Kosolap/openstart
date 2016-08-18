@@ -8,6 +8,27 @@ var shortLogin = 'Cлишком короткий логин!',
 var Reg = new RegExp("^[a-zA-Z0-9]+$");
 
 
+$(document).ready(function(){
+
+    document.onkeyup = function (e) {
+
+        e = e || window.event;
+
+        if (e.keyCode === 13) {
+
+            registration();
+
+        }
+
+
+        return false;
+
+    }
+
+
+});
+
+
 
 function registration(){
     valid = true;
