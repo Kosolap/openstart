@@ -6,7 +6,7 @@ function getOrder($id){
 
     $db = getDB();
 
-    $row = $db->prepare('SELECT * FROM orders WHERE id = :id');
+    $row = $db->prepare('SELECT * FROM orders2 WHERE id = :id');
     $row->execute(array('id'=>$id));
 
     $price = $row->fetchAll();
