@@ -1,7 +1,8 @@
+<?php $name = $data[0]->get('client')?>
 
 <div class="container-fluid">
 
-    <ol class="rounded">
+    <ol class="pills">
 
         <?php
 
@@ -9,49 +10,76 @@
 
             $order = $data[$i];
 
-            echo '<li> Счёт №'.$order->get('inv_id').' от '.date('d.m.Y',$order->get('start_date')).'. Дата исполнения '
-                        .date('d.m.Y',$order->get('end_date')).' <a href="?printB='.$order->get('inv_id').'">Счёт</a>   <a href="?printA='.$order->get('inv_id').'">Акт</a>'
-                        .'<button onclick="saveformOpen('.$order->get('inv_id').')">Сохранить</button></li>';
+            echo '<li><div class="liorderinfobox"> Счёт №'.$order->get('inv_id')
+                .' от '.date('d.m.Y',$order->get('start_date'))
+                .'. Закрыт '.date('d.m.Y',$order->get('end_date'))
+                .'   </div>'
+                .'   <div class="libuttonbox">'
+                .'   <a class="lilink" href="?printB='.$order->get('inv_id').'">Счёт</a>'
+                .'   <a class="lilink" href="?printA='.$order->get('inv_id').'">Акт</a>'
+                .'   <button class="lilink" onclick="save('.$order->get('inv_id').')">Сохранить</button>'
+                .'   </div></li>';
         }
 
         ?>
 
     </ol>
 
+    <div id="popup">
 
-    <div id="savepopup">
+        <form method="post" url="../day5/" enctype="multipart/form-data" id="filesave">
 
-        <select name="type" form="saveform">
+            <input type="hidden" name="clientR" value='<?php echo $name;?>'>
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <br/>
+            <br/>
+            <br/>
+            <input class="lilink" type="submit" value="Загрузить" name="submit">
+            <input class="lilink" type="button" class="formButton" onclick="cancel()" value="Отмена"/>
 
+        </form>
+
+
+    </div>
+
+    <div id="savepopup" class="popup">
+
+
+        <label>Выберете формат</label>    <select name="type" form="saveform">
             <option value="xls">xls</option>
             <option value="xlsx">xlsx</option>
             <option value="csv">csv</option>
-
         </select>
-
-        <form name="saveform" id="saveform">
-            <input type="hidden" name="idW" id="idW" value=""/>
-            <input type="submit" value="Сохранить"/>
+        <br/>
+        <br/>
+        <br/>
+        <form action="../day5/" id="saveform">
+            <input type="hidden" id="id" name="idW">
+            <input class="lilink" type="button" onclick="savestart()" value="Сохранить">
+            <input class="lilink" type="button" class="formButton" onclick="savecancel()" value="Отмена"/>
         </form>
 
-        <button onclick="saveformClose()">Отмена</button>
 
     </div>
 
-    <div id="loadpopup">
+    <br/>
+    <?php if($message != ''){
+        if($message == 'good'){ ?>
+        <script language="JavaScript">
+            $.fancybox('<div class="resultBox success"><div class="restext">Счёт загружен!</div></div>');
+        </script>
 
-        <form name="loadform">
-            <input type="file" name="fileToUpload" value="Выберете файл"/>
-            <input type="hidden" name="loadinfo"/>
-            <input type="submit" value="Загрузить"/>
-        </form>
+    <?php    }
+        else{ ?>
+            <script language="JavaScript">
+            $.fancybox('<div class="resultBox fail"><div class="restext"><?php echo $message;?></div></div>');
+            </script>
+    <?php    }
+        $message='';
+    }?>
+    <br/>
 
-        <button onclick="loadformClose()">Отмена</button>
-
-    </div>
-
-
-    <a class="singllink" href="/day5">На главную страницу</a><button onclick="loadformOpen()">Загрузить</button>
+    <a class="lilink" href="/day5">На главную страницу</a> <button class="lilink" onclick="load()">Загрузить</button>
 
 
 

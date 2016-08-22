@@ -11,7 +11,7 @@ class CurBiss
 
     function __construct($data) {
 
-        $this->id = $data['id'];
+        if(isset($data['id'])) $this->id = $data['id'];
         $this->name = $data['name'];
         $this->col = $data['col'];
         $this->price = $data['price'];
@@ -79,6 +79,10 @@ class CurBiss
         CurBissService::saveOrUpdate($data7);
         CurBissService::saveOrUpdate($data8);
         CurBissService::saveOrUpdate($data9);
+    }
+
+    function toString(){
+        echo $this->name.' '.$this->col.' '.$this->price.' '.$this->order_id;
     }
 
 }

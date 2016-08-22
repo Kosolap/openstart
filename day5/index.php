@@ -3,12 +3,11 @@
 ini_set('display_errors', 1);
 
 // Подключаем класс для работы с excel
-include_once dirname(__FILE__) . '/Classes/PHPExcel.php';
-
+require_once('../day5/Classes/PHPExcel.php');
 // Подключаем класс для вывода данных в формате excel
-include_once dirname(__FILE__) . '/Classes/PHPExcel/Writer/Excel2007.php';
+require_once('../day5/Classes/PHPExcel/Writer/Excel2007.php');
 
-include_once dirname(__FILE__) . '/Classes/PHPExcel/IOFactory.php';
+require_once '../day5/Classes/PHPExcel/IOFactory.php';
 
 PHPExcel_Settings::setZipClass(PHPExcel_Settings::PCLZIP);
 
@@ -59,7 +58,6 @@ elseif (isset($_GET['printA'])){
 
 }
 elseif (isset($_GET['idW'])){
-
 
     $order = OrderService::getOrderByInvId($_GET['idW']);
 

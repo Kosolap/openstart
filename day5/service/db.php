@@ -7,13 +7,28 @@ $opt = array(
 );
 
 //Подключаемся к базе данных
+
+/*
 $server = "mysql:host=127.0.0.1;dbname=day2;";
+
 
 $user = 'root';
 
 $password = '123';
+*/
+
+
+$server = "mysql:host=localhost:3306;dbname=day2;";
+
+$user = 'root';
+
+$password = '12345';
+
+
 
 $dbh = new PDO($server, $user, $password, $opt);
+
+
 
 
 

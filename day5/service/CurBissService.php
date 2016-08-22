@@ -40,5 +40,22 @@ class CurBissService
 
     }
 
+    static function save($data){
+        $db = getDB();
+
+        $rows = $db->prepare('DELETE FROM current_business WHERE order_id = ?');
+        $rows->execute(array($data[0]->get('order_id')));
+
+        for($i = 0; $i < count($data); $i++){
+
+            $row = $db->prepare('INSERT INTO current_business (name,col,price,order_id) VALUES (:name,:col,:price,:order_id)');
+
+            $row->execute(array('name'=>$data[$i]->get('name'),
+                'col'=>$data[$i]->get('col'),
+                'price'=>$data[$i]->get('price'),
+                'order_id'=>$data[$i]->get('order_id')));
+        }
+
+    }
 }
 

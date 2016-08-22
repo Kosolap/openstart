@@ -1,7 +1,7 @@
 <?php
 
 
-function getView($url, $data=null){
+function getView($url, $data=null, $message=null){
 
     $url = '../day5/views/'.$url.'.php';
 

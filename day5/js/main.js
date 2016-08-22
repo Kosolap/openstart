@@ -1,24 +1,28 @@
 $(document).ready(function(){
 
+    $( "#popup" ).dialog({
+        autoOpen: false,
+        resizable: false,
+        modal: true,
+        width:'auto'
+    });
+
     $( "#savepopup" ).dialog({
-        autoOpen: false
+        autoOpen: false,
+        resizable: false,
+        modal: true,
+        width:'auto'
     });
 
-
-    $( "#loadpopup" ).dialog({
-        autoOpen: false
-    });
-
-    $('html').keydown(function(eventObject){ //отлавливаем нажатие клавиш
+    $('html').keydown(function(event){ //отлавливаем нажатие клавиш
         if (event.keyCode == 13) { //если нажали Enter, то true
             checkClient();
+
             return false;
         }
     });
 
-
 });
-
 
 function checkClient() {
 
@@ -64,26 +68,38 @@ function checkClient() {
     if(val){
         $('#client_form').submit();
     }
+
+    return val;
 }
 
 
-function saveformClose() {
+//Функция скрытия PopUp
+function cancel(){
+
+    $( "#popup" ).dialog('close');
+    $( "#fileToUpload").val('');
+}
+
+function load() {
+
+    $( "#popup" ).dialog('open');
+
+}
+
+
+function savecancel(){
+
     $( "#savepopup" ).dialog('close');
 }
 
-function saveformOpen(id) {
+function save(id) {
 
     $( "#savepopup" ).dialog('open');
-    $( "#idW").val(id);
-    
+    $("#id").val(id);
+
 }
 
-function loadformClose() {
-    $( "#loadpopup" ).dialog('close');
-}
-
-function loadformOpen() {
-
-    $( "#loadpopup" ).dialog('open');
-
+function savestart() {
+    $('#saveform').submit();
+    savecancel();
 }

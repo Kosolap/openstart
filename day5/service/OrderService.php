@@ -67,4 +67,30 @@ class OrderService
             return $order;
     }
 
+    static function save($data){
+        $db = getDB();
+
+        $rows = $db->prepare('SELECT * FROM orders WHERE client = :client AND inv_id = :inv_id');
+        $rows->execute(array('client'=>$data->get('client'),
+                             'inv_id'=>$data->get('inv_id')));
+
+        $orders = $rows->fetchAll();
+        if(count($orders)!=0){
+            $row = $db->prepare('UPDATE orders SET end_date = :end_date WHERE id = :id');
+
+            $row->execute(array('end_date'=>$data->get('end_date'),
+                                'id'=>$orders[0]['id']));
+        }
+        else{
+            $row = $db->prepare('INSERT INTO orders (inv_id,start_date,end_date,client,summ) VALUES (:inv_id,:start_date,:end_date,:client,:summ)');
+
+            $row->execute(array('inv_id'=>$data->get('inv_id'),
+                'start_date'=>$data->get('start_date'),
+                'end_date'=>$data->get('end_date'),
+                'client'=>$data->get('client'),
+                'summ'=>$data->get('summ')));
+        }
+
+    }
+
 }
