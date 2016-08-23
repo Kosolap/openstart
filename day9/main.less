@@ -1,0 +1,52 @@
+@sidecolor: #f0c040;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+#wrapper {
+  position: relative;
+  min-height: 100%;
+}
+#content {
+  background-color: yellow;
+  height: 100%;
+  padding-bottom: 90px;
+}
+#footer {
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+#headr{
+  background-color: green;
+  height: 100px;
+}
+
+#lefthd{
+  width: 10%;
+  background-color: @sidecolor;
+  float:left;
+  height: 100px;
+}
+
+#righthd{
+  width: 10%;
+  background-color: @sidecolor;
+  float:right;
+  height: 100px;
+}
+
+#centhd{
+  width: 80%;
+  background-color: olive;
+  display: inline-block;
+  height: 100px;
+}
