@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <title>Отправка формы</title>
     <link rel="stylesheet" href="css/main.css"/>
-    <script src="../day8/js/main.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="../day8/css/jquery.fancybox.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="../day7/js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="../day8/js/jquery.fancybox.pack.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 
 
@@ -35,23 +34,17 @@
             </h1>
         </td>
         <td>
-            <?php if($title == 'registration'){?>
-                <a href="../day2">Главная</a>
-            <?php }
-            else{
-                if($_SESSION['user'] != 'Anon'){?>
-                    <a href="../day2?action=logout">Разлогиниться</a>
-                <?php }else{ ?>
-                    <a href="?reg">Регистрация</a>
-                <?php }}?>
-
+            <?php if($title != 'main') {?> <a href="../day8">Главная</a> <br/> <?php }?>
+            <?php if($title != 'registration' && $_SESSION['user'] == 'Anon') {?> <a href="?reg">Регистрация</a> <br/> <?php }?>
+            <?php if($title != 'list') {?> <a href="../day8"><a href="../day8/?list">Cписок пользователей</a><br/> <?php }?>
+            <?php if($_SESSION['user'] != 'Anon') { ?><a href="../day8/?lgout">Разлогинится</a><?php }?>
 
         </td>
     </tr>
 
     <tr>
         <td></td>
-        <td>
+        <td class = 'content'>
 
             <div class="container">
                 <div id="container-content">
@@ -77,3 +70,4 @@
 </body>
 </html>
 <script src="../day8/js/<?php if(isset($data['page'])) echo $data['page']; else echo 'main';?>.js"></script>
+<script> setUser("<?php echo $data['login']; ?>")</script>

@@ -24,6 +24,10 @@ td{
     height: 30%;
 }
 
+.content{
+    height: auto;
+}
+
 noscript{
     color: red;
     font-weight: bold;
@@ -38,13 +42,14 @@ noscript{
     width:100%;
     min-height:100%;
     overflow:hidden;
+    padding-bottom: 20px;
     top:0;
 }
 
 #container-content{
     margin:40px auto 0px auto;
     width:500px;
-    height: 300px;
+    min-height: 300px;
     padding:50px 10px 10px 10px;
     border-radius:5px;
     box-shadow: 0px 0px 10px #000;
@@ -61,6 +66,109 @@ noscript{
 }
 
 .proftext{
+    color: black;
     float: right;
     margin-right: 50px;
+}
+
+.imgdiv{
+    display: inline-block;
+    float:right;
+}
+
+.ui-datepicker-trigger{
+    width: 20px;
+    height: 20px;
+}
+
+#savebuttbox{
+    display: none;
+}
+
+
+ol {
+    counter-reset:myCounter;
+    margin-left:100px;
+    padding-left:5px;
+    color: rgb(100,100,100);
+    width: 100px;
+}
+
+li {
+    position: relative;
+    padding-left: 40px;
+    margin: 0.45em 0;
+    list-style: none;
+    line-height: 1.8em;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+li:hover {
+    color: rgb(0,0,0);
+}
+
+li:before {
+    content:counter(myCounter);
+    counter-increment:myCounter;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8em;
+    padding:0px;
+    color:#fff;
+    background:#2980b9;
+    font-weight:bold;
+    text-align:center;
+    border-radius: .9em;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover:before {
+    background-color: #2ecc71;
+}
+
+li li:before{
+    background-color: #3498db;
+}
+
+li:after {
+    position: absolute;
+    top: 2.1em;
+    left: 0.9em;
+    width: 2px;
+    height: calc(100% - 2em);
+    content: '';
+    background-color: rgb(203, 203, 203);
+    z-index: 0;
+}
+
+li:hover:after {
+    background-color: #2ecc71;
+}
+
+.lilink{
+    color: black;
+    text-decoration: none;
+    border: 2px rgba(227, 216, 186, 0.6) solid;
+    border-radius: 70em;
+    padding: 6px 20px 6px 20px;
+    background: rgba(227, 192, 184, 0.39);
+    font-family: Areal, serif;
+    font-size: medium;
+
+
+}
+
+
+.lilink:hover{
+    font-weight: 200;
+    background: rgba(155, 150, 148, 0.39);
 }

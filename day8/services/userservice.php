@@ -55,6 +55,17 @@ function getByName($name){
     return $author;
 }
 
+function getAllUsers(){
+    $db = getDB();
+
+    $row = $db->prepare('SELECT * FROM users');
+    $row->execute();
+
+    $authors = $row->fetchAll();
+
+    return $authors;
+}
+
 function getUserInfo($name){
 
     $db = getDB();
@@ -71,30 +82,41 @@ function getUserInfo($name){
 
 function setUserInfo($data){
 
+    $db = getDB();
+
     if(getUserInfo($data['login']) != 0){
+
+        $name = $data['name'];
+        $reg_date = $data['reg_date'];
+        $birth_date = $data['birth_date'];
+        $last_activ= time();
+        $login = $data['login'];
+
+        $row = $db->prepare('UPDATE user_info SET name=:name,birth_date=:birth_date,'.
+            'last_activ=:last_activ WHERE login=:login');
+
+        $row->execute(array('name'=>$name,
+            'birth_date'=>$birth_date,
+            'last_activ'=>$last_activ,
+            'login'=>$login));
+
+    }
+    else{
         $name = '';
         $reg_date = time();
         $birth_date = 0;
         $last_activ= time();
         $login = $data['login'];
+
+        $row = $db->prepare('INSERT INTO user_info (name,birth_date,reg_date,last_activ,login)'.
+            ' VALUES (:name,:birth_date,:reg_date,:last_activ,:login)');
+
+        $row->execute(array('name'=>$name,
+            'reg_date'=>$reg_date,
+            'birth_date'=>$birth_date,
+            'last_activ'=>$last_activ,
+            'login'=>$login));
+
     }
-    else{
-        $name = $data['name'];
-        $reg_date = $data['reg_date'];
-        $birth_date = $data['birth_date'];
-        $last_activ= $data['last_activ'];
-        $login = $data['login'];
-    }
 
-
-
-    $db = getDB();
-
-    $row = $db->prepare('INSERT INTO users (name,birth_date,reg_date,last_activ,login)'.
-                        ' VALUES (:name,:birth_date,:reg_date,:last_activ,:login)');
-    $row->execute(array('name'=>$name,
-        'reg_date'=>$reg_date,
-        'birth_date'=>$birth_date,
-        'last_activ'=>$last_activ,
-        'login'=>$login));
 }

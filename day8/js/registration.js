@@ -1,4 +1,5 @@
 var shortLogin = 'Cлишком короткий логин!',
+    longLogin = 'Слишком длинный логин',
     shortPass = 'Слишком короткий пароль',
     notEqualPass = 'Пароли не совпадают!',
     notUniqueLogin = 'Пользователь с таким именем уже зарегестрирован!';
@@ -32,6 +33,8 @@ $(document).ready(function(){
 
 function registration(){
     valid = true;
+
+    cleanInfo();
 
     checkLogin();
     checkPassword();
@@ -67,7 +70,9 @@ function checkLogin(){
 
         notValidField($('#login_info'), shortLogin);
 
-    } else {
+    }
+    else  if (login.val().length > 20) notValidField($('#login_info'), longLogin);
+        else {
         $.ajax({
             url: '../day8/',
             data: {'login':login.val()},

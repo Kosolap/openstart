@@ -25,7 +25,29 @@ if(isset($_GET['reg'])){
     getView('registration',array('page' => 'registration'));
 
 }
-elseif ($_GET['login']){
+elseif (isset($_GET['list'])){
+    getView('list',getAllUsers());
+}
+elseif (isset($_GET['inf'])){
+    echo json_encode(getUserInfo($_GET['inf']));
+}
+elseif (isset($_GET['info'])){
+    $userInfo = getUserInfo($_GET['info']);
+
+    if($userInfo != 0) getView('main', $userInfo);
+
+    else{
+        $userInfo = getAllUsers();
+        getView('list', $userInfo);
+    }
+}
+elseif (isset($_GET['lgout'])){
+    $_SESSION['user'] = 'Anon';
+    if($_COOKIE['userdata']) unset ($_COOKIE ['userdata']);
+
+    getView('authorization',array('page' => 'authorization'));
+}
+elseif (isset($_GET['login'])){
 
 
         $user = getByName($_GET['login'])['login'];
@@ -45,6 +67,8 @@ elseif (isset($_POST['login'])){
 
     if(isset($_POST['password_rep'])){
         registration($info);
+        $data = array('login' => $_POST['login']);
+        setUserInfo($data);
     }
     else{
 
@@ -54,9 +78,18 @@ elseif (isset($_POST['login'])){
     }
 
 }
+elseif ($_POST['userData']){
+
+    setUserInfo($_POST['userData']);
+
+}
 elseif($_SESSION['user'] == 'Anon'){
 
     getView('authorization',array('page' => 'authorization'));
 
 }
-else  getView('main');
+else  {
+    $info = getUserInfo($_SESSION['user']);
+
+    getView('main',$info);
+}

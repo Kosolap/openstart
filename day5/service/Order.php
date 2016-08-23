@@ -204,6 +204,10 @@ class Order
     }
     function saveAsCSV(){
 
+        header ("Content-Type: application/octet-stream");
+        header ("Accept-Ranges: bytes");
+        header ("Content-Disposition: attachment; filename= order.csv");
+
         $file = "php://output";
         $list = array (
             array('','Номер счета:',$this->inv_id),
@@ -241,9 +245,7 @@ class Order
 
         fclose($fp);
 
-        header ("Content-Type: application/octet-stream");
-        header ("Accept-Ranges: bytes");
-        header ("Content-Disposition: attachment; filename= order.csv");
+
     }
 
     function loadFromCSV($file,$company){
