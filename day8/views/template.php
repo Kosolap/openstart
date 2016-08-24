@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Отправка формы</title>
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../day8/css/jquery.fancybox.css" type="text/css" media="screen" />
     <script type="text/javascript" src="../day8/js/jquery.fancybox.pack.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
 
 
 </head>

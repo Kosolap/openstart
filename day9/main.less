@@ -13,40 +13,316 @@ body {
   min-height: 100%;
 }
 #content {
-  background-color: yellow;
   height: 100%;
-  padding-bottom: 90px;
+  padding-bottom: 250px;
 }
+
+#leftcont{
+  float:left;
+  width: ~"calc((100% - 1500px)/2)";
+  height: ~"calc(100% - 410px)";
+}
+
+#rightcont{
+  float:right;
+  width: ~"calc((100% - 1500px)/2)";
+  height: ~"calc(100% - 410px)";
+}
+
+#centcont{
+  display: inline-block;
+  height: ~"calc(100% - 410px)";
+}
+
 #footer {
-  background-color: red;
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 250px;
+  font-family: Sans;
+}
+
+#left{
+  float:left;
+  height: 160px;
+  width: ~"calc((100% - 1500px)/2)";
+}
+
+#right{
+  float:right;
+  height: 160px;
+  width: ~"calc((100% - 1500px)/2)";
+}
+
+#cent{
+  display: inline-block;
+}
+
+table{
+  width: 1500px;
+  height: 160px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+#conttb{
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+td{
+  border-collapse: collapse;
+  padding: 0;
+}
+
+#logohd{
+  width: 450px;
+  height: 160px;
+  margin: 0;
+}
+
+#telhd{
+  text-align: right;
   height: 80px;
 }
-#headr{
-  background-color: green;
-  height: 100px;
+
+#mailhd{
+
+  text-align: center;
+  width: 260px;
 }
 
-#lefthd{
-  width: 10%;
-  background-color: @sidecolor;
-  float:left;
-  height: 100px;
+#mail{
+  font-family: Sans;
+  color: #0fb8ef;
 }
 
-#righthd{
-  width: 10%;
-  background-color: @sidecolor;
-  float:right;
-  height: 100px;
+#mail:hover{
+  text-decoration: none;
 }
 
-#centhd{
-  width: 80%;
-  background-color: olive;
+#menuhd{
+  text-align: right;
+}
+
+#menu{
+  list-style-type: none;
+
+}
+
+li{
+  display: inline;
+  padding-left: 30px;
+}
+
+.lilink{
+  color: black;
+  font-size: larger;
+  text-decoration: none;
+  padding-bottom: 13px;
+  border-bottom: #008fd6 1px solid;
+}
+
+.lilink:hover{
+  font-family: Serif;
+  border-bottom: #d88c4c 1px solid;
+  color: #d88c4c;
+}
+
+#fttop{
+  height: 40px;
+  width: 100%;
+  background: url(../img/fttop.png);
+}
+
+#ftbot{
+  height: 30px;
+  background: url(../img/ftbot.png);
+}
+
+#coprft{
+  vertical-align: top;
+}
+
+#contft{
+  text-align: right;
+}
+
+#linksft{
+  width: 460px;
+  text-align: center;
+}
+
+.socimg{
+  padding-left: 10px;
+}
+
+
+
+h1{
+  font-family: Helvetica;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+h2{
+  font-family: Helvetica;
+  font-size: 27px;
+  font-weight: lighter;
+}
+
+h3{
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p{
+  font-family: Serif;
+  font-size: 15px;
+  margin: 11px 0 11px 0;
+}
+
+#conttbtop{
+  padding-top: 20px;
+}
+
+#conttbmid{
+  padding-top: 20px;
+  text-align: center;
+}
+
+label{
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 47px;
+  margin-bottom: 35px;
   display: inline-block;
-  height: 100px;
+}
+
+.inf{
+  padding: 12px 20px 12px 20px;
+  width: 350px;
+  text-align: left;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#lbbase{
+  color: #0099cc;
+}
+
+.base{
+  background: #edf3f8;
+}
+
+#lblight{
+  color: #6da5cd;
+}
+
+.light{
+  background: #edf3f8;
+}
+
+#lbstand{
+  color: #ffc32a;
+}
+
+.stand{
+  background: #fff3d5;
+}
+
+#lbbusiness{
+  color: #ff4706;
+}
+
+.business{
+  background: #ffede7;
+}
+
+.conttbinf{
+  width: 365px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.price{
+  font-family: Sans;
+  font-size: 37px;
+  font-weight: lighter;
+}
+
+.stepnum{
+  font-family: Sans;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #006699;
+  display: inline-block;
+}
+
+.steptext{
+  width: 120px;
+  height: 50px;
+  font-size: 10px;
+  font-family: Sans;
+  font-weight: lighter;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+}
+
+
+#continf{
+  text-align: center;
+  width: 1500px;
+}
+
+.imgdiv{
+  float: left;
+  width: 153px;
+  height: 153px;
+}
+
+.normtext{
+  float: left;
+  width: 550px;
+  text-align: left;
+}
+
+.row{
+  width: 1500px;
+  height: 200px;
+}
+
+.space{
+  width: 1500px;
+  height: 75px;
+}
+
+.infobox{
+  vertical-align: bottom;
+  display: inline-block;
+  width: 240px;
+  text-align: left;
+  margin: 20px;
+}
+
+#display{
+  width: 1500px;
+  text-align: center;
+}
+
+#pult{
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#info{
+  display: inline-block;
 }
