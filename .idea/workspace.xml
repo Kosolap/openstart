@@ -1,49 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7feef874-a1f7-496e-9bc6-2622cf36df9b" name="Default" comment="Задание четвёртого дня, плюс всякие доработки">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day9/img/port/1-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day9/img/port/1-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day9/img/port/2-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day9/img/port/2-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day11/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day11/services/SessionService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day9/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day9/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day9/templates/contacts.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day9/templates/footer.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day9/templates/info.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day9/templates/portfolio.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/uploads/bill.xls" afterPath="$PROJECT_DIR$/day5/uploads/bill.xls" />
+    <list default="true" id="7feef874-a1f7-496e-9bc6-2622cf36df9b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day11/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day11/view/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/css/jquery.fancybox.css" afterPath="$PROJECT_DIR$/day5/css/jquery.fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/css/main.css" afterPath="$PROJECT_DIR$/day5/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/docviews/act.php" afterPath="$PROJECT_DIR$/day5/docviews/act.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/docviews/invoice.php" afterPath="$PROJECT_DIR$/day5/docviews/invoice.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/functions.php" afterPath="$PROJECT_DIR$/day5/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/index.php" afterPath="$PROJECT_DIR$/day5/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/js/jquery.fancybox.pack.js" afterPath="$PROJECT_DIR$/day5/js/jquery.fancybox.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/js/main.js" afterPath="$PROJECT_DIR$/day5/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/service/CurBiss.php" afterPath="$PROJECT_DIR$/day5/service/CurBiss.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/service/CurBissService.php" afterPath="$PROJECT_DIR$/day5/service/CurBissService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/service/Order.php" afterPath="$PROJECT_DIR$/day5/service/Order.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/service/OrderService.php" afterPath="$PROJECT_DIR$/day5/service/OrderService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/service/db.php" afterPath="$PROJECT_DIR$/day5/service/db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/views/main.php" afterPath="$PROJECT_DIR$/day5/views/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/views/orders.php" afterPath="$PROJECT_DIR$/day5/views/orders.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day5/views/template.php" afterPath="$PROJECT_DIR$/day5/views/template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day8/views/template.php" afterPath="$PROJECT_DIR$/day8/views/template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/css/main.css" afterPath="$PROJECT_DIR$/day9/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/index.php" afterPath="$PROJECT_DIR$/day9/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/main.less" afterPath="$PROJECT_DIR$/day9/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/templates/header.tpl" afterPath="$PROJECT_DIR$/day9/templates/header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/templates/main.tpl" afterPath="$PROJECT_DIR$/day9/templates/main.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/templates/maincontent.tpl" afterPath="$PROJECT_DIR$/day9/templates/maincontent.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/templates_c/34ad0e0c718e71d28184305651a8ea3ac517bb48_0.file.index.tpl.php" afterPath="$PROJECT_DIR$/day9/templates_c/34ad0e0c718e71d28184305651a8ea3ac517bb48_0.file.index.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/templates_c/5e6d88c05b2d49d53bfbd5156ea835b5300243a3_2.file.debug.tpl.php" afterPath="$PROJECT_DIR$/day9/templates_c/5e6d88c05b2d49d53bfbd5156ea835b5300243a3_2.file.debug.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/templates_c/61a0a91523be3e9f5ceb43c9c893854208376873_0.file.maincontent.tpl.php" afterPath="$PROJECT_DIR$/day9/templates_c/61a0a91523be3e9f5ceb43c9c893854208376873_0.file.maincontent.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/templates_c/793b2939d4f3d9b204f6e630a6bd752ce1a62d0b_0.file.header.tpl.php" afterPath="$PROJECT_DIR$/day9/templates_c/793b2939d4f3d9b204f6e630a6bd752ce1a62d0b_0.file.header.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/templates_c/bde1247ed62ce251cdb8d5b54e36d142f506bd81_0.file.main.tpl.php" afterPath="$PROJECT_DIR$/day9/templates_c/bde1247ed62ce251cdb8d5b54e36d142f506bd81_0.file.main.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day11/index.php" afterPath="$PROJECT_DIR$/day11/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day11/services/SessionService.php" afterPath="$PROJECT_DIR$/day11/services/SessionService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day8/index.php" afterPath="$PROJECT_DIR$/day8/index.php" />
     </list>
     <ignored path="openstart.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,16 +29,6 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - day2@127.0.0.1" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -82,11 +36,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day11/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day11/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registration.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day8/js/registration.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1125">
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="84" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day11/view/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day8/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -95,8 +89,8 @@
       <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day11/services/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -122,15 +116,15 @@
       <file leaf-file-name="SessionService.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day11/services/SessionService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+            <state relative-caret-position="885">
+              <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
               <folding>
-                <marker date="1472052021350" expanded="true" signature="118:156" ph="SELECT * FRO... sessions" />
-                <marker date="1472052021350" expanded="true" signature="333:384" ph="UPDATE sessi... " />
-                <marker date="1472052021350" expanded="true" signature="364:378" ph="SELECT * FRO... sessions" />
-                <marker date="1472052021350" expanded="true" signature="497:555" ph="INSERT INTO sessions... " />
-                <marker date="1472052021350" expanded="true" signature="538:540" ph="SELECT * FRO... sessions" />
-                <marker date="1472052021350" expanded="true" signature="701:723" ph="SELECT * FRO... sessions" />
+                <marker date="1472053610138" expanded="true" signature="118:156" ph="SELECT * FRO... sessions" />
+                <marker date="1472053610138" expanded="true" signature="333:384" ph="UPDATE sessi... " />
+                <marker date="1472053610138" expanded="true" signature="364:378" ph="SELECT * FRO... sessions" />
+                <marker date="1472053610138" expanded="true" signature="497:555" ph="INSERT INTO sessions... " />
+                <marker date="1472053610138" expanded="true" signature="538:540" ph="SELECT * FRO... sessions" />
+                <marker date="1472053610138" expanded="true" signature="701:723" ph="SELECT * FRO... sessions" />
               </folding>
             </state>
           </provider>
@@ -159,8 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/day5/views/template.php" />
-        <option value="$PROJECT_DIR$/day5/index.php" />
         <option value="$PROJECT_DIR$/day7/fff.html" />
         <option value="$PROJECT_DIR$/day7/.htaccess" />
         <option value="$PROJECT_DIR$/day7/view.php" />
@@ -189,7 +181,6 @@
         <option value="$PROJECT_DIR$/day8/js/authorization.js" />
         <option value="$PROJECT_DIR$/day8/js/registration.js" />
         <option value="$PROJECT_DIR$/day8/services/userservice.php" />
-        <option value="$PROJECT_DIR$/day8/index.php" />
         <option value="$PROJECT_DIR$/day9/templates/index.tpl" />
         <option value="$PROJECT_DIR$/day9/css/main.css" />
         <option value="$PROJECT_DIR$/day9/templates/footer.tpl.php" />
@@ -210,6 +201,9 @@
         <option value="$PROJECT_DIR$/day11/services/db.php" />
         <option value="$PROJECT_DIR$/day11/services/SessionService.php" />
         <option value="$PROJECT_DIR$/day11/index.php" />
+        <option value="$PROJECT_DIR$/day11/js/main.js" />
+        <option value="$PROJECT_DIR$/day11/view/main.php" />
+        <option value="$PROJECT_DIR$/day8/index.php" />
       </list>
     </option>
   </component>
@@ -302,38 +296,6 @@
               <option name="myItemId" value="openstart" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="day11" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openstart" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="day11" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openstart" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -346,67 +308,17 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="day8" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openstart" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="day8" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openstart" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="day2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="openstart" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="day2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day9/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kosbitrix" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -522,7 +434,11 @@
       <workItem from="1472022967256" duration="93000" />
       <workItem from="1472023150851" duration="234000" />
       <workItem from="1472023412669" duration="27569000" />
-      <workItem from="1472053125387" duration="12000" />
+      <workItem from="1472053125387" duration="1181000" />
+      <workItem from="1472108408328" duration="4808000" />
+      <workItem from="1472137742991" duration="593000" />
+      <workItem from="1472193994030" duration="633000" />
+      <workItem from="1472220609814" duration="1670000" />
     </task>
     <task id="LOCAL-00001" summary="Phpstorm commit test">
       <created>1471355194958</created>
@@ -552,20 +468,27 @@
       <option name="project" value="LOCAL" />
       <updated>1471538667906</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="9+11">
+      <created>1472053242449</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1472053242449</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215376000" />
+    <option name="totallyTimeSpent" value="224249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="24" width="1869" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31486562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3302249" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17663193" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17663193" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32709113" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24978614" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -615,7 +538,8 @@
     <MESSAGE value="Add cockie authorisation" />
     <MESSAGE value="Задание третьего дня" />
     <MESSAGE value="Задание четвёртого дня, плюс всякие доработки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание четвёртого дня, плюс всякие доработки" />
+    <MESSAGE value="9+11" />
+    <option name="LAST_COMMIT_MESSAGE" value="9+11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -624,9 +548,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/1852fca9/cc5b4584-c6b6-4920-8781-672fe97dbe42/day2.users" />
-    <entry file="dbDummy://dbtable:/1852fca9/cc5b4584-c6b6-4920-8781-672fe97dbe42/day2.user_info" />
-    <entry file="dbDummy://dbtable:/1852fca9/cc5b4584-c6b6-4920-8781-672fe97dbe42/day2.user_info" />
     <entry file="dbDummy://dbtable:/1852fca9/cc5b4584-c6b6-4920-8781-672fe97dbe42/day2.user_info" />
     <entry file="dbDummy://dbtable:/1852fca9/cc5b4584-c6b6-4920-8781-672fe97dbe42/day2.user_info" />
     <entry file="dbDummy://dbtable:/1852fca9/cc5b4584-c6b6-4920-8781-672fe97dbe42/day2.users" />
@@ -657,24 +578,10 @@
     <entry file="dbDummy://dbtable:/1852fca9/cc5b4584-c6b6-4920-8781-672fe97dbe42/day2.user_info" />
     <entry file="dbDummy://dbtable:/1852fca9/cc5b4584-c6b6-4920-8781-672fe97dbe42/day2.user_info" />
     <entry file="dbDummy://dbtable:/1852fca9/cc5b4584-c6b6-4920-8781-672fe97dbe42/day2.user_info" />
-    <entry file="file://$PROJECT_DIR$/day8/js/registration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day8/js/authorization.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="43" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day8/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -736,13 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day8/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -821,18 +721,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day11/services/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day9/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/1852fca9/226fa846-ebe0-4e50-8f3b-943c4b10c84e/day2.sessions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day8/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day7/views/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day8/js/registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="84" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -853,36 +787,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day11/services/SessionService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+        <state relative-caret-position="885">
+          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
           <folding>
-            <marker date="1472052021350" expanded="true" signature="118:156" ph="SELECT * FRO... sessions" />
-            <marker date="1472052021350" expanded="true" signature="333:384" ph="UPDATE sessi... " />
-            <marker date="1472052021350" expanded="true" signature="364:378" ph="SELECT * FRO... sessions" />
-            <marker date="1472052021350" expanded="true" signature="497:555" ph="INSERT INTO sessions... " />
-            <marker date="1472052021350" expanded="true" signature="538:540" ph="SELECT * FRO... sessions" />
-            <marker date="1472052021350" expanded="true" signature="701:723" ph="SELECT * FRO... sessions" />
+            <marker date="1472053610138" expanded="true" signature="118:156" ph="SELECT * FRO... sessions" />
+            <marker date="1472053610138" expanded="true" signature="333:384" ph="UPDATE sessi... " />
+            <marker date="1472053610138" expanded="true" signature="364:378" ph="SELECT * FRO... sessions" />
+            <marker date="1472053610138" expanded="true" signature="497:555" ph="INSERT INTO sessions... " />
+            <marker date="1472053610138" expanded="true" signature="538:540" ph="SELECT * FRO... sessions" />
+            <marker date="1472053610138" expanded="true" signature="701:723" ph="SELECT * FRO... sessions" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11/services/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day11/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/1852fca9/226fa846-ebe0-4e50-8f3b-943c4b10c84e/day2.sessions">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/day11/view/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day8/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

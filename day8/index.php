@@ -5,9 +5,9 @@ include '../day8/services/userservice.php';
 session_start();
 
 
-if($_SESSION['user'] == '')
+if(!isset($_SESSION['user']))
 {
-    if($_COOKIE['userdata']){
+    if(isset($_COOKIE['userdata'])){
 
         $userdata = json_decode($_COOKIE['userdata']);
 
@@ -43,7 +43,7 @@ elseif (isset($_GET['info'])){
 }
 elseif (isset($_GET['lgout'])){
     $_SESSION['user'] = 'Anon';
-    if($_COOKIE['userdata']) unset ($_COOKIE ['userdata']);
+    if(isset($_COOKIE['userdata'])) unset ($_COOKIE ['userdata']);
 
     getView('authorization',array('page' => 'authorization'));
 }
@@ -78,7 +78,7 @@ elseif (isset($_POST['login'])){
     }
 
 }
-elseif ($_POST['userData']){
+elseif (isset($_POST['userData'])){
 
     setUserInfo($_POST['userData']);
 

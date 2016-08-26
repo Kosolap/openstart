@@ -46,7 +46,11 @@ function getOnliene(){
 
     $rez = 0;
 
+
+
     foreach ($sessions as  $session){
+
+
 
         if(($date - $session['date']) < 60)$rez++;
 

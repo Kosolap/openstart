@@ -1,5 +1,4 @@
 <?php
-set_time_limit(0);
 include '../day11/services/SessionService.php';
 
 session_start();
@@ -7,9 +6,10 @@ session_start();
 saveOrUpdate(session_id());
 
 
-echo getOnliene();
+if(isset($_GET['users'])){
 
+    echo getOnliene();
 
-
-
-echo getOnliene();
+}
+else include '../day11/view/main.php';
+?>
